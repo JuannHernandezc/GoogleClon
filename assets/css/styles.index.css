@@ -68,9 +68,13 @@ body{
     width: 55rem;
     height: 4rem;
     padding: 2rem;
+    padding-left: 6rem;
     margin-top: 2rem;
     border-radius: 2rem;
     border: 1px solid gray;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: white;
     background-color: transparent;
 }
 .container-input input:focus{
@@ -95,4 +99,104 @@ body{
     top: 1rem;
     right: 4rem;
     color: rgb(197, 197, 197);
+}
+.container-btn{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.main__button{
+    background-color: var(--secundary-color);
+    width: 16rem;
+    display: inline-block;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 1rem;
+    color: gray;
+}
+.main__button:hover{
+    border: .1rem solid var(--letter-color);
+    transition: .5s;
+    cursor: pointer;
+}
+.main__languages{
+    margin-top: 4rem;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    color: gray;
+}
+.main__languages a{
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    color: skyblue;
+    text-decoration: none;
+}
+.main__languages a:hover{
+    text-decoration: underline;
+    transition: .5s;
+}
+.container-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.footer{
+    width: 100%;
+}
+.footer__section1{
+    background-color: #171717;
+    padding: .2rem;
+}
+.footer__section1 p{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    margin-left: 5rem;
+    color: gray;
+}
+.footer__section2{
+    display: flex;
+    padding: 1rem;
+    background-color: #171717;
+    margin-top: .1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__section2 ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.footer__section2 ul li{
+    margin-left: 2rem;
+}
+.footer__section2 ul li a{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: gray;
+}
+.footer__section2 ul li a:hover{
+    text-decoration: underline;
+}
+.footer__list1{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:970px){
+    .footer__section2{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:580px){
+    .footer__list1{
+        justify-content: center;
+    }
+    .footer__list1{
+        margin-left: 0;
+    }
 }
